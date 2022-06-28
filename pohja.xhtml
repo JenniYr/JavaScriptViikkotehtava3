@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi">
+    <head><!-- head-osan sisältöä ei saa muuttaa -->
+        <script src="https://appro.mit.jyu.fi/tiea2120/vt/vt3/2022/data2022.js"></script>
+        <script async="" type="module" src="vt3.js"></script>
+        <link rel="StyleSheet" href="tyylit.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8"/>
+        <title>VT3 - 2022 kevät-kesä</title>
+    </head>
+    <body><!-- Tämän tiedoston sisältöä saa muuttaa vapaasti tästä kommentista eteenpäin
+ Kirjoita mahdollisimman paljon valmista HTML-koodia ja luo javascriptilla dynaamisesti
+ vain tarpeelliset kuten leimaustapojen ja sarjojen valinta sekä joukkuelistaus
+  -->
+       <h1>Tulospalvelu</h1>
+
+       <form action="" id = "lisaaJoukkue">
+        <fieldset id="fieldsetNimiJaSarjat">
+            <legend>Joukkueen tiedot</legend>
+            <p>
+                <label for="joukkueen_nimi">Nimi 
+                <input class = "inputJoukkueenNimi" id="joukkueen_nimi" type="text" name="nimi"
+                 title="Anna tähän joukkueen nimi" required="true" minlength="2"/></label>
+            </p>
+
+            <div id = "leimaustavat"> Leimaustavat</div>
+
+            <div id="pSarjat"> Sarja
+            </div>
+
+        </fieldset>
+    <fieldset id = "fieldsetJasenet">
+    <legend>Jäsenet</legend>
+        <p class = "PJASENET">
+            <label class = "pJasenet" for="jasen1">Jäsen 1 </label>
+            <input id="jasen1" class = "jasen" type="text" name="jasen"
+             title="Anna tähän jäsenen nimi" minlength="4" />
+        </p>
+        <p class = "PJASENET">
+            <label class = "pJasenet" for="jasen2">Jäsen 2 </label>
+            <input id="jasen2" class = "jasen" type="text" name="jasen"
+             title="Anna tähän jäsenen nimi" minlength="4" />
+        </p>     
+        </fieldset>
+        <p><input type="submit" value="Lähetä" id = "nappi" /></p>
+    </form>
+
+    <div id = "joukkuelistaus">
+
+    </div>
+
+<!-- Tästä eteenpäin sivun sisältöä ei saa muuttaa -->
+<!-- Sivun validoinnin voit tehdä milloin tahansa näppäinyhdistelmällä CTRL+ALT+V -->
+<script src="https://appro.mit.jyu.fi/tools/htmlinspector/html-inspector.js"></script>
+<script src="https://appro.mit.jyu.fi/tools/validator/validator.user.js"></script>
+<script src="https://appro.mit.jyu.fi/tools/jshint/jshint.js"></script>
+<script src="https://appro.mit.jyu.fi/tools/jshint/jshint.user.js"></script>
+<script src="https://appro.mit.jyu.fi/tools/htmlinspector/htmlinspector-live.js"></script>
+</body>
+</html>

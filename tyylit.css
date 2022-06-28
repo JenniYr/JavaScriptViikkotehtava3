@@ -1,0 +1,23 @@
+fieldset{
+    width: 45%;
+}
+  
+label.sarja{
+    float: right;
+}
+
+ 
+input{
+    float: right;
+}
+
+#nappi{
+  float: left;
+}
+
+:invalid {
+    border: 1px solid red;
+ }
+ :valid {
+    border: 1px solid black;
+ }
